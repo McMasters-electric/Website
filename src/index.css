@@ -1,0 +1,318 @@
+/* FIXED: Reset with better section handling */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; /* ADDED: This is crucial for mobile */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix mobile viewport and height inheritance */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* ADDED: Ensure consistent black background */
+}
+html {
+  height: -webkit-fill-available;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  font-family: 'Lato', sans-serif;
+  background-color: #000000; /* ADDED: Consistent background */
+}
+
+/* FIXED: Only Hero section needs full height, not all sections */
+section#hero {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+/* ADDED: All other sections should have auto height and seamless blending */
+section {
+  background-color: #000000;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+/* ADDED: Ensure section containers don't create gaps */
+section .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Chrome/Silver Metallic Text Effect - FIXED */
+.chrome-text {
+  background: linear-gradient(to bottom, #eee 0%, #999 50%, #777 51%, #555 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* Chrome Border Effects for Cards */
+.chrome-border {
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, 
+    #ffffff 0%, 
+    #e0e0e0 15%, 
+    #b8b8b8 30%, 
+    #9a9a9a 45%, 
+    #777777 50%, 
+    #9a9a9a 55%, 
+    #b8b8b8 70%, 
+    #e0e0e0 85%, 
+    #ffffff 100%
+  ) 1;
+  position: relative;
+}
+
+/* Chrome border that works with border-radius */
+.chrome-border-rounded {
+  background: 
+    linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    linear-gradient(45deg, 
+      #ffffff 0%, 
+      #e0e0e0 15%, 
+      #b8b8b8 30%, 
+      #9a9a9a 45%, 
+      #777777 50%, 
+      #9a9a9a 55%, 
+      #b8b8b8 70%, 
+      #e0e0e0 85%, 
+      #ffffff 100%
+    ) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+/* Mobile Viewport Height Fix */
+.mobile-vh-fix {
+  height: 100vh; /* Fallback */
+  height: -webkit-fill-available; /* WebKit fix */
+  height: 100svh; /* Modern browsers */
+}
+
+/* Set Lato for body text, keep system fonts for headings */
+p, span, li, a, label, input, textarea, blockquote {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Keep headings as system fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Center all headers in cards */
+.bg-gray-900 h1,
+.bg-gray-900 h2,
+.bg-gray-900 h3,
+.bg-gray-900 h4,
+.bg-gray-900 h5,
+.bg-gray-900 h6 {
+  text-align: center;
+}
+
+/* Legal page prose styling */
+.prose {
+  max-width: none;
+}
+.prose h2 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.prose h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.prose ul {
+  margin-bottom: 1rem;
+}
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.prose a {
+  color: #f97316;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.prose a:hover {
+  color: #fb923c;
+}
+
+/* ADDED: Mobile-specific section fixes */
+@media only screen and (max-width: 768px) {
+  /* Prevent horizontal overflow that can cause lines */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Ensure all sections blend seamlessly on mobile */
+  section {
+    margin: 0 !important;
+    border: none !important;
+    outline: none !important;
+    background-color: #000000 !important;
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+  
+  /* Fix container widths on mobile */
+  section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Remove browser default section spacing */
+  section:first-child {
+    margin-top: 0 !important;
+  }
+  
+  section:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* 2025 Mobile Responsive Breakpoints - Core Web Vitals Optimized */
+/* Mobile First Approach - Base styles for 320px+ */
+
+/* Extra Small Mobile (320px - 360px) */
+@media only screen and (max-width: 359px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  p { font-size: 14px; line-height: 1.4; }
+}
+
+/* Standard Mobile (360px - 480px) - Samsung Galaxy standard */
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  p { font-size: 15px; line-height: 1.5; }
+}
+
+/* Large Mobile (481px - 767px) - Large phones, small tablets */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  p { font-size: 16px; line-height: 1.6; }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  p { font-size: 17px; line-height: 1.6; }
+}
+
+/* Desktop (1024px+) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.25rem; }
+  p { font-size: 18px; line-height: 1.7; }
+}
+
+/* Core Web Vitals Optimization */
+/* Reduce Cumulative Layout Shift */
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Improve Largest Contentful Paint */
+.hero-image {
+  content-visibility: auto;
+  contain-intrinsic-size: 1200px 600px;
+}
+
+/* Optimize Interaction to Next Paint */
+button, a {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Reduce main thread blocking for better INP */
+.lazy-load {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px 200px;
+}
+
+/* Mobile-specific optimizations */
+@media only screen and (max-width: 768px) {
+  /* Ensure touch targets are at least 44px */
+  button, a, input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 16px;
+  }
+  
+  /* Optimize mobile text readability */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Improve mobile scrolling performance */
+  .scroll-container {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+}
+
+#contact .space-y-6 {
+  margin-top: 3rem;
+}
