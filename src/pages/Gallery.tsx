@@ -24,8 +24,8 @@ const Gallery: React.FC = () => {
     {
       id: 4,
       title: "EV Charger Installation",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/ev-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/ev-1200x900.webp"
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/EV%20charger%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/EV%20charger%201200x900_result.webp"
     },
     {
       id: 5,
