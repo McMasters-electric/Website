@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://hook.us1.make.com/flm8b2u09y8eoffk5ew9m224unj275sw', {
+      const response = await fetch('https://hook.us2.make.com/dmiwftllhocxop2ymi3b12sucx5oo39e', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
