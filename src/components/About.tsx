@@ -15,7 +15,7 @@ const About: React.FC = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-4xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Company Description Card */}
           <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700">
@@ -45,7 +45,7 @@ const About: React.FC = () => {
             </div>
           </div>
           
-          {/* Professional Credentials Card - Enhanced for Desktop */}
+          {/* Professional Credentials Card */}
           <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">
               Professional Credentials
@@ -54,7 +54,7 @@ const About: React.FC = () => {
               <ul className="space-y-4 md:space-y-8 text-lg md:text-xl text-gray-300 inline-block text-left">
                 <li className="flex items-center">
                   <span 
-                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0 chrome-border-rounded"
+                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0"
                     style={{
                       background: 'linear-gradient(145deg, #ffffff, #e0e0e0, #b8b8b8, #9a9a9a)',
                       boxShadow: 'inset 1px 1px 2px rgba(255,255,255,0.8), inset -1px -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
@@ -65,7 +65,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span 
-                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0 chrome-border-rounded"
+                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0"
                     style={{
                       background: 'linear-gradient(145deg, #ffffff, #e0e0e0, #b8b8b8, #9a9a9a)',
                       boxShadow: 'inset 1px 1px 2px rgba(255,255,255,0.8), inset -1px -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
@@ -76,7 +76,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span 
-                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0 chrome-border-rounded"
+                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0"
                     style={{
                       background: 'linear-gradient(145deg, #ffffff, #e0e0e0, #b8b8b8, #9a9a9a)',
                       boxShadow: 'inset 1px 1px 2px rgba(255,255,255,0.8), inset -1px -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
@@ -87,7 +87,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span 
-                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0 chrome-border-rounded"
+                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0"
                     style={{
                       background: 'linear-gradient(145deg, #ffffff, #e0e0e0, #b8b8b8, #9a9a9a)',
                       boxShadow: 'inset 1px 1px 2px rgba(255,255,255,0.8), inset -1px -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
@@ -98,7 +98,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span 
-                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0 chrome-border-rounded"
+                    className="inline-block w-2 h-2 md:w-3 md:h-3 rounded-full mr-3 flex-shrink-0"
                     style={{
                       background: 'linear-gradient(145deg, #ffffff, #e0e0e0, #b8b8b8, #9a9a9a)',
                       boxShadow: 'inset 1px 1px 2px rgba(255,255,255,0.8), inset -1px -1px 2px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
