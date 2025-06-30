@@ -18,7 +18,7 @@ const About: React.FC = () => {
       <div className="container mx-auto max-w-4xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Company Description Card */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700">
+          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 mx-4 md:mx-6 lg:mx-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">
               About McMaster Electric
             </h2>
@@ -46,7 +46,7 @@ const About: React.FC = () => {
           </div>
           
           {/* Professional Credentials Card */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700">
+          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 mx-4 md:mx-6 lg:mx-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">
               Professional Credentials
             </h2>
