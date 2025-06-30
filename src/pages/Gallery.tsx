@@ -57,7 +57,7 @@ const Gallery: React.FC = () => {
 
   return (
     <section className="min-h-screen bg-black pt-20 px-6">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
           <a
@@ -77,19 +77,19 @@ const Gallery: React.FC = () => {
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
+        {/* Gallery Grid - Masonry Style */}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 mb-16">
           {galleryImages.map(({ id, title, image }) => (
             <article
               key={id}
-              className="bg-gray-900 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 flex flex-col overflow-hidden"
+              className="bg-gray-900 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 mb-6 break-inside-avoid overflow-hidden"
               aria-label={`Gallery image: ${title}`}
             >
               <img
                 src={image}
                 alt={title}
                 loading="lazy"
-                className="w-full h-64 object-cover"
+                className="w-full h-auto object-contain"
                 onError={(e) => {
                   const target = e.currentTarget;
                   target.onerror = null;
@@ -97,10 +97,10 @@ const Gallery: React.FC = () => {
                 }}
               />
               <div
-                className="bg-gray-800 p-6 text-center"
+                className="bg-gray-800 p-4 text-center"
                 style={{ borderTop: '3px solid #9ca3af' }}
               >
-                <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
+                <h3 className="text-lg font-semibold text-white">{title}</h3>
               </div>
             </article>
           ))}
