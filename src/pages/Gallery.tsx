@@ -77,24 +77,24 @@ const Gallery: React.FC = () => {
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        {/* Gallery Grid - 2 columns, 5 rows */}
+        <div className="grid grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
           {galleryImages.map(({ id, title, image }) => (
             <article
               key={id}
-              className="bg-gray-900 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 overflow-hidden flex flex-col"
+              className="bg-gray-900 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 overflow-hidden"
               aria-label={`Gallery image: ${title}`}
             >
-              <div className="aspect-square bg-gray-800 p-2">
+              <div className="w-full h-64 bg-gray-800 p-3 flex items-center justify-center">
                 <img
                   src={image}
                   alt={title}
                   loading="lazy"
-                  className="w-full h-full object-contain rounded"
+                  className="max-w-full max-h-full object-contain"
                   onError={(e) => {
                     const target = e.currentTarget;
                     target.onerror = null;
-                    target.src = `https://via.placeholder.com/400x400/374151/ffffff?text=${encodeURIComponent(title)}`;
+                    target.src = `https://via.placeholder.com/400x256/374151/ffffff?text=${encodeURIComponent(title)}`;
                   }}
                 />
               </div>
