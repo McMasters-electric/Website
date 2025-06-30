@@ -6,8 +6,8 @@ const Gallery: React.FC = () => {
     {
       id: 1,
       title: "Electrical Panel Upgrade",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/panel-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/panel-1200x900.webp"
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/panel%20install%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/panel%20install%201200x900_result.webp"
     },
     {
       id: 2,
