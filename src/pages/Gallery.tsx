@@ -47,9 +47,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 8,
-      title: "Outside Meters",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/meters-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/meters-1200x900.webp"
+      title: "Lighting",
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/bingo%20hall%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/bingo%20hall%201200x900_result.webp"
     },
     {
       id: 9,
