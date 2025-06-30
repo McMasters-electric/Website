@@ -30,8 +30,8 @@ const Gallery: React.FC = () => {
     {
       id: 5,
       title: "New Wiring",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/wiring-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/wiring-1200x900.webp"
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/wiring%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/wiring%201200x900_result.webp"
     },
     {
       id: 6,
