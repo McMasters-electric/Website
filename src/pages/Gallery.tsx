@@ -18,7 +18,7 @@ const Gallery: React.FC = () => {
     {
       id: 3,
       title: "Outdoor Lighting Work",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/outdoor-600x450.webp",
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/outside%20lighting%20600x450_result.webp",
       large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/outside%20lighting%201200x900_result.webp"
     },
     {
