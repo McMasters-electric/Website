@@ -64,9 +64,9 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-start gap-8 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Request a Quote */}
-          <div className="max-w-md w-full">
+          <div className="max-w-md w-full mx-auto">
             <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 
                             transform transition-all duration-300 hover:shadow-3xl">
               <h3 className="text-2xl font-semibold mb-6 text-white text-center">Request a Quote</h3>
@@ -159,7 +159,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="max-w-md w-full">
+          <div className="max-w-md w-full mx-auto">
             <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 
                             transform transition-all duration-300 hover:shadow-3xl">
               <h3 className="text-2xl font-semibold mb-6 text-white text-center">Contact Information</h3>
