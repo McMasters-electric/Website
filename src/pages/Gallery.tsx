@@ -117,7 +117,7 @@ const Gallery: React.FC = () => {
               See our complete photo gallery on Facebook. We update our page with new electrical installations, repairs, and before/after photos.
             </p>
             <a
-              href="https://facebook.com/mcmasterelectric"
+              href="https://www.facebook.com/mcmasterelectric/photos"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
