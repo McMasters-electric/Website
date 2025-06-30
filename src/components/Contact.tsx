@@ -66,9 +66,10 @@ const Contact: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Quote Form */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 transform transition-all duration-300 hover:shadow-3xl">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Request a Quote</h3>
-            <form onSubmit={handleSubmit} className="space-y-6 mt-6 md:mt-16">
+          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 
+                       mx-4 md:mx-6 lg:mx-8 max-w-xl mx-auto">
+            <h3 className="text-2xl font-semibold mb-6 text-white text-center">Request a Quote</h3>
+            <form onSubmit={handleSubmit} className="space-y-6 mt-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
                 <input
@@ -156,43 +157,14 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 transform transition-all duration-300 hover:shadow-3xl">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Contact Information</h3>
-            <div className="space-y-6 pl-4">
-              <div>
-                <div className="flex items-center mb-1">
-                  <Phone className="w-6 h-6 mr-4 text-[#c0c0c0]" />
-                  <p className="font-semibold text-white">Phone</p>
-                </div>
-                <p className="text-gray-300 text-base ml-10">(518) 491-0389</p>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-1">
-                  <Mail className="w-6 h-6 mr-4 text-[#c0c0c0]" />
-                  <p className="font-semibold text-white">Email</p>
-                </div>
-                <p className="text-gray-300 text-base ml-10">mcmasterelectricllc@gmail.com</p>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-1">
-                  <MapPin className="w-6 h-6 mr-4 text-[#c0c0c0]" />
-                  <p className="font-semibold text-white">Service Area</p>
-                </div>
-                <p className="text-gray-300 text-base ml-10">Saratoga Springs & Surrounding Areas</p>
-              </div>
-
-              <div>
-                <div className="flex items-center mb-1">
-                  <Clock className="w-6 h-6 mr-4 text-[#c0c0c0]" />
-                  <p className="font-semibold text-white">Hours</p>
-                </div>
-                <p className="text-gray-300 text-base ml-10">
-                  Monday - Saturday: 7:00 AM - 7:00 PM<br />
-                  Sunday: Closed
-                </p>
-              </div>
+          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 
+                       mx-4 md:mx-6 lg:mx-8 max-w-xl mx-auto space-y-4 text-center">
+            <h3 className="text-2xl font-semibold mb-4 text-white">Contact Information</h3>
+            <div className="space-y-4">
+              <p><Phone className="inline mr-2 text-[#c0c0c0]" size={20}/> (518) 491-0389</p>
+              <p><Mail className="inline mr-2 text-[#c0c0c0]" size={20}/> mcmasterelectricllc@gmail.com</p>
+              <p><MapPin className="inline mr-2 text-[#c0c0c0]" size={20}/> Saratoga Springs & Surrounding Areas</p>
+              <p><Clock className="inline mr-2 text-[#c0c0c0]" size={20}/> Mon-Sat: 7AM-7PM</p>
             </div>
           </div>
         </div>
