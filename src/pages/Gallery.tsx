@@ -36,8 +36,8 @@ const Gallery: React.FC = () => {
     {
       id: 6,
       title: "Generator Install",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/generator-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/generator-1200x900.webp"
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/generator%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/generator%201200x900_result.webp"
     },
     {
       id: 7,
