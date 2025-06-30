@@ -59,9 +59,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 10,
-      title: "Smart Home Equipment",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/smart-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/smart-1200x900.webp"
+      title: "Recessed Lighting",
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/recess%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/recess%201200x900_result.webp"
     }
   ];
 
