@@ -51,9 +51,10 @@ const Services: React.FC = () => {
               {column.map((service, index) => (
                 <article
                   key={index}
-                  className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-[3px] border-gray-400 shadow-inner shadow-gray-700 
-                             min-h-[8rem] md:h-32 
-                             flex flex-col justify-center items-center text-center"
+                  className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-[3px] border-gray-400 
+                             shadow-inner shadow-gray-700 min-h-[8rem] md:h-32 
+                             flex flex-col justify-center items-center text-center
+                             mx-4 md:mx-6 lg:mx-8"
                 >
                   <h3 className="text-xl font-semibold text-white mb-3 leading-tight">
                     {service.title}
