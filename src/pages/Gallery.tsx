@@ -77,25 +77,27 @@ const Gallery: React.FC = () => {
           </p>
         </div>
 
-        {/* Gallery Grid - Masonry Style */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 mb-16">
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {galleryImages.map(({ id, title, image }) => (
             <article
               key={id}
-              className="bg-gray-900 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 mb-6 break-inside-avoid overflow-hidden"
+              className="bg-gray-900 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 overflow-hidden flex flex-col"
               aria-label={`Gallery image: ${title}`}
             >
-              <img
-                src={image}
-                alt={title}
-                loading="lazy"
-                className="w-full h-auto object-contain"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  target.onerror = null;
-                  target.src = `https://via.placeholder.com/400x300/374151/ffffff?text=${encodeURIComponent(title)}`;
-                }}
-              />
+              <div className="aspect-square bg-gray-800 p-2">
+                <img
+                  src={image}
+                  alt={title}
+                  loading="lazy"
+                  className="w-full h-full object-contain rounded"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    target.onerror = null;
+                    target.src = `https://via.placeholder.com/400x400/374151/ffffff?text=${encodeURIComponent(title)}`;
+                  }}
+                />
+              </div>
               <div
                 className="bg-gray-800 p-4 text-center"
                 style={{ borderTop: '3px solid #9ca3af' }}
