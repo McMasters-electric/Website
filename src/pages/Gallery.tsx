@@ -53,9 +53,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 9,
-      title: "Solar Backup System",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/solar-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/solar-1200x900.webp"
+      title: "Solar Power storage",
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/Solar%20basement%20setup%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/Solar%20basement%20setup%201200x900_result.webp"
     },
     {
       id: 10,
