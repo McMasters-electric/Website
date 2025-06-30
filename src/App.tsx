@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         />
         <link rel="canonical" href="https://mcmasterselectric.com/" />
       </Helmet>
-      <div className="min-h-screen">
+      <div className="min-h-screen mx-auto max-w-4xl px-4">
         <Hero />
         <About />
         <Services />
