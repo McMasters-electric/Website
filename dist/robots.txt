@@ -1,0 +1,11 @@
+# robots.txt for McMaster Electric LLC
+
+User-agent: *
+Disallow:
+
+Sitemap: https://mcmasterelectric.com/sitemap.xml
+
+# Crawl-delay for some bots (optional)
+# Crawl-delay: 10
+
+# Allow all robots full access
