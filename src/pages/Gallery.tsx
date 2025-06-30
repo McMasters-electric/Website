@@ -12,8 +12,8 @@ const Gallery: React.FC = () => {
     {
       id: 2,
       title: "Kitchen Lighting Installation",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/kitchen-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/kitchen-1200x900.webp"
+      small: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/recess%20lighting%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/recess%20lighting%201200x900_result.webp"
     },
     {
       id: 3,
