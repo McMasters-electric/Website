@@ -117,3 +117,54 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
+                  placeholder="Describe your electrical project or issue..."
+                  className="w-full px-4 py-3 bg-gray-800 text-white rounded-lg border-[3px] border-gray-400 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
+                />
+              </div>
+              {submitStatus === 'success' && (
+                <div className="bg-green-900 bg-opacity-50 border border-green-600 p-4 rounded-lg text-green-200 text-center">
+                  ✓ Thank you for your message! We'll get back to you soon.
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div className="bg-red-900 bg-opacity-50 border border-red-600 p-4 rounded-lg text-red-200 text-center">
+                  ✗ There was an error sending your message. Please try again or call us directly.
+                </div>
+              )}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full font-semibold py-3 px-6 rounded-lg flex items-center justify-center min-h-[44px]"
+                style={{
+                  background: isSubmitting ? 'linear-gradient(145deg, #888888, #666666)' : 'linear-gradient(145deg, #c0c0c0, #a0a0a0)',
+                  color: isSubmitting ? '#999999' : '#2d2d2d',
+                  border: '1px solid #808080',
+                  boxShadow: 'inset 2px 2px 4px rgba(255,255,255,0.3), inset -2px -2px 4px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2)',
+                  textShadow: '1px 1px 1px rgba(255,255,255,0.5)',
+                  cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                }}
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
+          </div>
+
+          {/* Contact Information */}
+          <div className="bg-gray-900 p-6 md:p-8 rounded-lg border-[3px] border-gray-400 shadow-inner shadow-gray-700 
+                       mx-auto max-w-md w-full mx-4 md:mx-6 space-y-4 text-center">
+            <h3 className="text-2xl font-semibold mb-4 text-white">Contact Information</h3>
+            <div className="space-y-4">
+              <p><Phone className="inline mr-2 text-[#c0c0c0]" size={20}/> (518) 491-0389</p>
+              <p><Mail className="inline mr-2 text-[#c0c0c0]" size={20}/> mcmasterelectricllc@gmail.com</p>
+              <p><MapPin className="inline mr-2 text-[#c0c0c0]" size={20}/> Saratoga Springs & Surrounding Areas</p>
+              <p><Clock className="inline mr-2 text-[#c0c0c0]" size={20}/> Mon-Sat: 7AM-7PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
