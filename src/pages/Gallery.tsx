@@ -41,9 +41,9 @@ const Gallery: React.FC = () => {
     },
     {
       id: 7,
-      title: "Basement Electrical Panels",
-      small: "https://raw.githubusercontent.com/McMasters-electric/images/main/basement-600x450.webp",
-      large: "https://raw.githubusercontent.com/McMasters-electric/images/main/basement-1200x900.webp"
+      title: "Outdoor lighting",
+      small: "https://github.com/McMasters-electric/images/blob/main/driveway%20lights%20600x450_result.webp",
+      large: "https://raw.githubusercontent.com/McMasters-electric/images/refs/heads/main/driveway%20lights%201200x900_result.webp"
     },
     {
       id: 8,
